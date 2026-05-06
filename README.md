@@ -137,7 +137,6 @@ On Mobile:
 ![](MobileAbout.png)
 
 ## References
-In the Proposal document
 1.	Colour Psychology in Marketing. (2022). The Meaning of Colour. https://www.helpscout.com/blog/psychology-of-color/
 2.	Google Fonts. (n.d.). Roboto & Roboto Condensed. https://fonts.google.com/
 3.	Moz. (2023). Beginner's Guide to SEO. https://moz.com/beginners-guide-to-seo
@@ -217,12 +216,8 @@ In the Proposal document
 ## Run
 * How to Run This Project Locally
 To view and run this project on your local machine, follow these simple steps:
-   1. Clone the repository:
-git clone https://github.com/Jeankaneki/Wrench-and-Spark-Website.git
-
-   2. Navigate to the project directory:
-cd wrench-and-spark-website
-
+   1. Clone the repository: git clone https://github.com/JinKaneki/WrenchAndSpark-Web.git
+   2. Navigate to the project directory: cd wrench-and-spark-website
    3. Open index.html in your browser:
       * Simply double-click the index.html file, or right-click and choose "Open with" your preferred web browser.
 No special installations or dependencies are required.
