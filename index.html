@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrench & Spark - Professional Automotive Tools & Equipment</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Wrench & Spark - South Africa's premier online tool shop. Professional-grade automotive tools, equipment, and expert advice for mechanics and DIY enthusiasts. Free shipping on orders over R500.">
+    <meta name="keywords" content="automotive tools, mechanic tools, DIY tools, socket sets, wrenches, power tools, diagnostic equipment, South Africa tool shop, professional tools">
+    <meta name="author" content="Wrench & Spark">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Wrench & Spark - The Mechanic's Source">
+    <meta property="og:description" content="Professional-grade automotive tools and equipment for mechanics and DIY enthusiasts in South Africa. Quality guaranteed with lifetime warranty.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.wrenchspark.co.za">
+    <meta property="og:image" content="https://www.wrenchspark.co.za/images/og-image.jpg">
+    
+    <!-- Formerly Twitter or X Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wrench & Spark - The Mechanic's Source">
+    <meta name="twitter:description" content="Professional-grade automotive tools and equipment">
+    <meta name="twitter:image" content="https://www.wrenchspark.co.za/images/twitter-image.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoPartsStore",
+      "name": "Wrench & Spark",
+      "description": "South Africa's premier online tool shop for professional mechanics and DIY enthusiasts",
+      "url": "https://www.wrenchspark.co.za",
+      "telephone": "+27-11-123-4567",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Tool Lane",
+        "addressLocality": "Johannesburg",
+        "addressRegion": "Gauteng",
+        "postalCode": "2000",
+        "addressCountry": "ZA"
+      },
+      "openingHours": "Mo-Fr 08:00-17:00, Sa 08:00-13:00",
+      "priceRange": "R100 - R50000"
+    }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Wrench & <span>Spark</span></a>
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="enquiry.html">Enquiry</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i> <span id="cart-count" style="display: none;">0</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>The Mechanic's Source</h1>
+            <p>Quality tools, expert advice, and everything you need to get the job done right. From professional mechanics to DIY enthusiasts.</p>
+            <div class="hero-buttons">
+                <a href="products.html" class="btn">Shop Now</a>
+                <a href="about.html" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories Section -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Featured Categories</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Hand Tools</h3>
+                    <p>Quality wrenches, sockets, screwdrivers, and more.</p>
+                    <a href="products.html" class="btn btn-secondary">Browse</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Power Tools</h3>
+                    <p>Drills, impacts, sanders, and professional power tools.</p>
+                    <a href="products.html" class="btn btn-secondary">Browse</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>Diagnostics</h3>
+                    <p>Scan tools, multimeters, and diagnostic equipment.</p>
+                    <a href="products.html" class="btn btn-secondary">Browse</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="section-padding" style="background-color: #f1f5f9;">
+        <div class="container">
+            <h2 class="section-title">Our Best Sellers</h2>
+            <div class="product-grid">
+                <div class="product-card" data-category="hand-tools">
+                    <div class="product-image">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Professional Socket Set</h3>
+                        <p class="product-price">R1,299.99</p>
+                        <p class="product-description">72-piece set with ratchet, extensions, and both metric and standard sizes.</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="power-tools">
+                    <div class="product-image">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Impact Wrench</h3>
+                        <p class="product-price">R2,499.99</p>
+                        <p class="product-description">1/2" drive cordless impact wrench with 450 ft-lbs of torque.</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="tool-storage">
+                    <div class="product-image">
+                        <i class="fas fa-toolbox"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mechanic's Toolbox</h3>
+                        <p class="product-price">R3,799.99</p>
+                        <p class="product-description">56" rolling cabinet with 8 drawers and stainless steel top.</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card" data-category="diagnostics">
+                    <div class="product-image">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Battery Tester</h3>
+                        <p class="product-price">R899.99</p>
+                        <p class="product-description">Digital battery and electrical system tester for 12V vehicles.</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 30px;">
+                <a href="products.html" class="btn">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Propositions Section -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Why Choose Wrench & Spark?</h2>
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Quality Guarantee</h3>
+                    <p>All our tools are professionally rated and come with a lifetime warranty.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Fast Shipping</h3>
+                    <p>Free shipping on orders over R500, delivered within 2-3 business days.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Expert Advice</h3>
+                    <p>Our team of experienced mechanics is available to help you choose the right tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding" style="background-color: #f1f5f9;">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What is your return policy?
+                        <span></span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>We offer a 30-day money-back guarantee on all our products. If you're not completely satisfied with your purchase, you can return it in its original condition for a full refund. Tools must be unused and in original packaging.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Do you offer international shipping?
+                        <span></span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Currently, we only ship within South Africa. We offer free shipping on orders over R500 to major cities, with delivery within 2-3 business days. Regional areas may take 3-5 business days.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Are your tools suitable for professional use?
+                        <span></span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Yes! All our tools are professional-grade and used by mechanics across South Africa. We source directly from manufacturers who supply to professional automotive workshops and ensure all products meet industry standards.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Do you offer bulk discounts?
+                        <span></span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="accordion-content-inner">
+                            <p>Absolutely! We offer competitive pricing for bulk orders and can customize packages for workshops, training centers, and businesses. Contact our sales team through the enquiry form for personalized quotes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Tool Lane, Johannesburg</p>
+                    <p><i class="fas fa-phone"></i> (011) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@wrenchspark.co.za</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="enquiry.html">Enquiry</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for updates and special offers</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your Email Address">
+                        <a href="#" class="btn">Subscribe</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Wrench & Spark. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/interactive.js"></script>
+</body>
+</html>

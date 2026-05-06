@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Wrench & Spark | Professional Automotive Tools</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Browse Wrench & Spark's complete collection of professional automotive tools. Hand tools, power tools, diagnostic equipment, and tool storage solutions for mechanics and DIY enthusiasts.">
+    <meta name="keywords" content="automotive tools, mechanic tools, power tools, diagnostic equipment, tool storage, socket sets, wrenches, South Africa tool shop">
+    <meta name="author" content="Wrench & Spark">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags --> 
+    <meta property="og:title" content="Products - Wrench & Spark">
+    <meta property="og:description" content="Professional automotive tools and equipment for mechanics and DIY enthusiasts">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.wrenchspark.co.za/products.html">
+    
+    
+    <!-- Formerly Twitter or X Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wrench & Spark - The Mechanic's Source">
+    <meta name="twitter:description" content="Professional-grade automotive tools and equipment">
+    <meta name="twitter:image" content="https://www.wrenchspark.co.za/images/twitter-image.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoPartsStore",
+      "name": "Wrench & Spark",
+      "description": "South Africa's premier online tool shop for professional mechanics and DIY enthusiasts",
+      "url": "https://www.wrenchspark.co.za",
+      "telephone": "+27-11-123-4567",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Tool Lane",
+        "addressLocality": "Johannesburg",
+        "addressRegion": "Gauteng",
+        "postalCode": "2000",
+        "addressCountry": "ZA"
+      },
+      "openingHours": "Mo-Fr 08:00-17:00, Sa 08:00-13:00",
+      "priceRange": "R100 - R50000"
+    }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Wrench & <span>Spark</span></a>
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html" class="active">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="enquiry.html">Enquiry</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i> <span id="cart-count" style="display: none;">0</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Browse our extensive collection of professional-grade tools and equipment for mechanics and DIY enthusiasts. Quality guaranteed with lifetime warranty.</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="section-padding" style="background-color: #f1f5f9;">
+        <div class="container">
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="productSearch" placeholder="Search for tools, brands, or categories...">
+                    <button class="btn" id="searchButton">Search</button>
+                </div>
+            </div>
+            
+            <div class="filter-container">
+                <button class="btn filter-btn active" data-filter="all">All Products</button>
+                <button class="btn filter-btn" data-filter="hand-tools">Hand Tools</button>
+                <button class="btn filter-btn" data-filter="power-tools">Power Tools</button>
+                <button class="btn filter-btn" data-filter="tool-storage">Tool Storage</button>
+                <button class="btn filter-btn" data-filter="diagnostics">Diagnostics</button>
+                <button class="btn filter-btn" data-filter="safety">Safety Equipment</button>
+            </div>
+            
+            <div class="sort-container">
+                <label for="sortProducts">Sort by:</label>
+                <select id="sortProducts">
+                    <option value="featured">Featured</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="name">Name: A to Z</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div id="noResults" style="display: none;">
+                <i class="fas fa-search fa-3x" style="color: #ccc; margin-bottom: 20px;"></i>
+                <h3>No products found</h3>
+                <p>Try adjusting your search or filter criteria</p>
+                <button class="btn" onclick="clearSearch()">Show All Products</button>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Hand Tools -->
+                <div class="product-card" data-category="hand-tools">
+                    <div class="product-image">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Professional Socket Set</h3>
+                        <p class="product-price">R1,299.99</p>
+                        <p class="product-description">72-piece set with ratchet, extensions, and both metric and standard sizes. Chrome vanadium steel construction.</p>
+                        <div class="product-features">
+                            <span class="feature-tag">72 Pieces</span>
+                            <span class="feature-tag">Lifetime Warranty</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="hand-tools">
+                    <div class="product-image">
+                        <i class="fas fa-screwdriver"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Precision Screwdriver Set</h3>
+                        <p class="product-price">R349.99</p>
+                        <p class="product-description">26-piece precision screwdriver set with various bits and comfortable grip handle. Magnetic tips included.</p>
+                        <div class="product-features">
+                            <span class="feature-tag">26 Pieces</span>
+                            <span class="feature-tag">Magnetic</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="hand-tools">
+                    <div class="product-image">
+                        <i class="fas fa-compress-arrows-alt"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Torque Wrench</h3>
+                        <p class="product-price">R1,099.99</p>
+                        <p class="product-description">1/2" drive click-type torque wrench with range of 50-250 ft-lbs. Certified accuracy ±4%.</p>
+                        <div class="product-features">
+                            <span class="feature-tag">50-250 ft-lbs</span>
+                            <span class="feature-tag">Certified</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Power Tools -->
+                <div class="product-card" data-category="power-tools">
+                    <div class="product-image">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Impact Wrench</h3>
+                        <p class="product-price">R2,499.99</p>
+                        <p class="product-description">1/2" drive cordless impact wrench with 450 ft-lbs of torque. Brushless motor with 5.0Ah battery.</p>
+                        <div class="product-features">
+                            <span class="feature-tag">450 ft-lbs</span>
+                            <span class="feature-tag">Brushless</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="power-tools">
+                    <div class="product-image">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Dual Temperature Heat Gun</h3>
+                        <p class="product-price">R599.99</p>
+                        <p class="product-description">Professional heat gun with 2 temperature settings (300°C/570°F & 550°C/1020°F). Perfect for shrink wrapping and paint stripping.</p>
+                        <div class="product-features">
+                            <span class="feature-tag">Dual Temp</span>
+                            <span class="feature-tag">550°C Max</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="power-tools">
+                    <div class="product-image">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Angle Grinder</h3>
+                        <p class="product-price">R899.99</p>
+                        <p class="product-description">4-1/2" angle grinder with 6 amp motor. Includes grinding wheel, cut-off wheel, and side handle.</p>
+                        <div class="product-features">
+                            <span class="feature-tag">6 Amp</span>
+                            <span class="feature-tag">Safety Guard</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Tool Storage -->
+                <div class="product-card" data-category="tool-storage">
+                    <div class="product-image">
+                        <i class="fas fa-toolbox"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mechanic's Toolbox</h3>
+                        <p class="product-price">R3,799.99</p>
+                        <p class="product-description">56" rolling cabinet with 8 drawers and stainless steel top. 2000 lb capacity with ball bearing slides.</p>
+                        <div class="product-features">
+                            <span class="feature-tag">8 Drawers</span>
+                            <span class="feature-tag">2000 lb Capacity</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="tool-storage">
+                    <div class="product-image">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mobile Service Cart</h3>
+                        <p class="product-price">R1,899.99</p>
+                        <p class="product-description">5-drawer service cart with locking lid and 4" swivel casters. Perfect for mobile mechanics.</p>
+                        <div class="product-features">
+                            <span class="feature-tag">5 Drawers</span>
+                            <span class="feature-tag">Locking</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Diagnostics -->
+                <div class="product-card" data-category="diagnostics">
+                    <div class="product-image">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Digital Battery Tester</h3>
+                        <p class="product-price">R899.99</p>
+                        <p class="product-description">Digital battery and electrical system tester for 12V vehicles. Tests CCA, voltage, and charging system.</p>
+                        <div class="product-features">
+                            <span class="feature-tag">12V Systems</span>
+                            <span class="feature-tag">CCA Testing</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="diagnostics">
+                    <div class="product-image">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Professional OBD2 Scanner</h3>
+                        <p class="product-price">R1,899.99</p>
+                        <p class="product-description">Professional-grade OBD2 scanner with live data and ABS/SRS capabilities. Reads and clears codes for all systems.</p>
+                        <div class="product-features">
+                            <span class="feature-tag">ABS/SRS</span>
+                            <span class="feature-tag">Live Data</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <!-- Safety Equipment -->
+                <div class="product-card" data-category="safety">
+                    <div class="product-image">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Professional Safety Kit</h3>
+                        <p class="product-price">R499.99</p>
+                        <p class="product-description">Complete safety kit including safety glasses, gloves, ear protection, and hard hat. Meets OSHA standards.</p>
+                        <div class="product-features">
+                            <span class="feature-tag">Complete Kit</span>
+                            <span class="feature-tag">OSHA Compliant</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="safety">
+                    <div class="product-image">
+                        <i class="fas fa-fire-extinguisher"></i>
+                    </div>
+                    <div class="product-info">
+                        <h3>Workshop Fire Extinguisher</h3>
+                        <p class="product-price">R299.99</p>
+                        <p class="product-description">5 lb ABC fire extinguisher with wall mount bracket. UL rated for workshops and garages.</p>
+                        <div class="product-features">
+                            <span class="feature-tag">5 lb ABC</span>
+                            <span class="feature-tag">UL Rated</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="pagination-btn active">1</button>
+                <button class="pagination-btn">2</button>
+                <button class="pagination-btn">3</button>
+                <span class="pagination-ellipsis">...</span>
+                <button class="pagination-btn">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Overview -->
+    <section class="section-padding" style="background-color: #003366; color: white;">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Shop by Category</h2>
+            <div class="categories-overview">
+                <div class="category-overview">
+                    <i class="fas fa-wrench"></i>
+                    <h3>Hand Tools</h3>
+                    <p>Wrenches, sockets, screwdrivers, pliers, and more</p>
+                    <a href="#" class="btn btn-secondary">Browse</a>
+                </div>
+                <div class="category-overview">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Power Tools</h3>
+                    <p>Drills, impacts, grinders, and professional power tools</p>
+                    <a href="#" class="btn btn-secondary">Browse</a>
+                </div>
+                <div class="category-overview">
+                    <i class="fas fa-toolbox"></i>
+                    <h3>Tool Storage</h3>
+                    <p>Cabinets, chests, carts, and organization solutions</p>
+                    <a href="#" class="btn btn-secondary">Browse</a>
+                </div>
+                <div class="category-overview">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Diagnostics</h3>
+                    <p>Scanners, testers, and diagnostic equipment</p>
+                    <a href="#" class="btn btn-secondary">Browse</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section-padding">
+        <div class="container text-center">
+            <h2>Can't Find What You're Looking For?</h2>
+            <p>We specialize in sourcing hard-to-find tools and equipment. Contact us for special orders and custom requests.</p>
+            <div class="cta-buttons">
+                <a href="enquiry.html" class="btn">Submit an Enquiry</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Our Experts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Tool Lane, Johannesburg</p>
+                    <p><i class="fas fa-phone"></i> (011) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@wrenchspark.co.za</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="enquiry.html">Enquiry</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for updates and special offers</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your Email Address">
+                        <a href="#" class="btn">Subscribe</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Wrench & Spark. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/interactive.js"></script>
+    
+    <script>
+        function clearSearch() {
+            document.getElementById('productSearch').value = '';
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                if (btn.getAttribute('data-filter') === 'all') {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+            document.querySelectorAll('.product-card').forEach(card => {
+                card.style.display = 'block';
+            });
+            document.getElementById('noResults').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

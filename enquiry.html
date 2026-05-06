@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Enquiry - Wrench & Spark | Get Quotes & Information</title>
+    
+    <!-- SEO Meta Tags -->
+     
+    <meta name="description" content="Submit product enquiries, request quotes, and get detailed information about Wrench & Spark automotive tools. Bulk orders, custom requests, and business partnerships.">
+    <meta name="keywords" content="tool quotes, automotive tool enquiry, bulk tool orders, custom tool requests, business partnership, South Africa tool supplier">
+    <meta name="author" content="Wrench & Spark">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Product Enquiry - Wrench & Spark">
+    <meta property="og:description" content="Get quotes and detailed information about our professional automotive tools and equipment.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.wrenchspark.co.za/enquiry.html">
+    
+    <!-- Formerly Twitter or X Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wrench & Spark - The Mechanic's Source">
+    <meta name="twitter:description" content="Professional-grade automotive tools and equipment">
+    <meta name="twitter:image" content="https://www.wrenchspark.co.za/images/twitter-image.jpg">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoPartsStore",
+      "name": "Wrench & Spark",
+      "description": "South Africa's premier online tool shop for professional mechanics and DIY enthusiasts",
+      "url": "https://www.wrenchspark.co.za",
+      "telephone": "+27-11-123-4567",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Tool Lane",
+        "addressLocality": "Johannesburg",
+        "addressRegion": "Gauteng",
+        "postalCode": "2000",
+        "addressCountry": "ZA"
+      },
+      "openingHours": "Mo-Fr 08:00-17:00, Sa 08:00-13:00",
+      "priceRange": "R100 - R50000"
+    }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Wrench & <span>Spark</span></a>
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i> <span id="cart-count" style="display: none;">0</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Product & Service Enquiry</h1>
+            <p>Get detailed information, pricing, and availability for our professional automotive tools and equipment. Perfect for workshops, businesses, and serious enthusiasts.</p>
+        </div>
+    </section>
+
+    <!-- Enquiry Form Section -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="form-container">
+                <h2 class="section-title">Request Information & Quotes</h2>
+                <p class="form-description">Interested in our products or services? Fill out the form below and we'll provide you with detailed information, pricing, and availability within 1 business day.</p>
+                
+                <form id="enquiryForm" class="enquiry-form">
+                    <div class="form-section">
+                        <h3><i class="fas fa-user-circle"></i> Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="enquiryName">Full Name *</label>
+                                <input type="text" id="enquiryName" name="name" required
+                                       placeholder="Enter your full name">
+                                <span class="error-message" id="enquiryNameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="enquiryCompany">Company/Organization</label>
+                                <input type="text" id="enquiryCompany" name="company"
+                                       placeholder="Your company name (if applicable)">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="enquiryEmail">Email Address *</label>
+                                <input type="email" id="enquiryEmail" name="email" required
+                                       placeholder="Enter your business email">
+                                <span class="error-message" id="enquiryEmailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="enquiryPhone">Phone Number *</label>
+                                <input type="tel" id="enquiryPhone" name="phone" required
+                                       placeholder="Enter your contact number">
+                                <span class="error-message" id="enquiryPhoneError"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="enquiryPosition">Your Position/Role</label>
+                            <input type="text" id="enquiryPosition" name="position"
+                                   placeholder="e.g., Workshop Manager, Mechanic, Business Owner">
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3><i class="fas fa-clipboard-list"></i> Enquiry Details</h3>
+                        <div class="form-group">
+                            <label for="enquiryType">Type of Enquiry *</label>
+                            <select id="enquiryType" name="enquiryType" required>
+                                <option value="">Select enquiry type</option>
+                                <option value="product">Product Information</option>
+                                <option value="quote">Request Quote</option>
+                                <option value="bulk">Bulk Order</option>
+                                <option value="custom">Custom Tool Request</option>
+                                <option value="partnership">Business Partnership</option>
+                                <option value="sponsorship">Sponsorship Opportunity</option>
+                                <option value="training">Training & Workshops</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="enquiryTypeError"></span>
+                        </div>
+                        
+                        <div class="form-group" id="productSelection" style="display: none;">
+                            <label for="enquiryProduct">Select Product(s)</label>
+                            <select id="enquiryProduct" name="product" multiple>
+                                <option value="socket-set">Professional Socket Set</option>
+                                <option value="impact-wrench">Impact Wrench</option>
+                                <option value="toolbox">Mechanic's Toolbox</option>
+                                <option value="battery-tester">Battery Tester</option>
+                                <option value="diagnostic-tools">Diagnostic Tools</option>
+                                <option value="power-tools">Power Tools</option>
+                                <option value="hand-tools">Hand Tools</option>
+                                <option value="other">Other Product</option>
+                            </select>
+                            <small>Hold Ctrl/Cmd to select multiple products</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="enquiryQuantity">Estimated Quantity</label>
+                            <input type="number" id="enquiryQuantity" name="quantity" 
+                                   placeholder="e.g., 1, 10, 100" min="1">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="enquiryBudget">Estimated Budget (ZAR)</label>
+                            <select id="enquiryBudget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="0-1000">R0 - R1,000</option>
+                                <option value="1000-5000">R1,000 - R5,000</option>
+                                <option value="5000-10000">R5,000 - R10,000</option>
+                                <option value="10000-50000">R10,000 - R50,000</option>
+                                <option value="50000+">R50,000+</option>
+                                <option value="custom">Custom Budget (Specify below)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group" id="customBudget" style="display: none;">
+                            <label for="enquiryCustomBudget">Custom Budget Amount</label>
+                            <input type="text" id="enquiryCustomBudget" name="customBudget"
+                                   placeholder="e.g., R25,000">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="enquiryMessage">Detailed Enquiry *</label>
+                            <textarea id="enquiryMessage" name="message" required 
+                                      placeholder="Please provide details about your enquiry, including specific products, quantities, requirements, intended use, and any special considerations..."
+                                      minlength="20" maxlength="2000"></textarea>
+                            <div class="char-count">
+                                <span id="enquiryCharCount">0</span>/2000 characters
+                            </div>
+                            <span class="error-message" id="enquiryMessageError"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3><i class="fas fa-cogs"></i> Additional Services</h3>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="enquiryCatalog" name="catalog">
+                                <span class="checkmark"></span>
+                                Please send me your complete product catalog
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="enquiryRepresentative" name="representative">
+                                <span class="checkmark"></span>
+                                I'd like to be contacted by a sales representative
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="enquiryDemo" name="demo">
+                                <span class="checkmark"></span>
+                                I'm interested in a product demonstration
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="enquiryTraining" name="training">
+                                <span class="checkmark"></span>
+                                I'm interested in technical training sessions
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3><i class="fas fa-calendar-alt"></i> Timeline & Follow-up</h3>
+                        <div class="form-group">
+                            <label for="enquiryTimeline">Required Timeline</label>
+                            <select id="enquiryTimeline" name="timeline">
+                                <option value="">Select your timeline</option>
+                                <option value="urgent">Urgent (Within 1 week)</option>
+                                <option value="soon">Soon (Within 2-4 weeks)</option>
+                                <option value="planning">Planning Phase (1-3 months)</option>
+                                <option value="future">Future Consideration (3+ months)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="enquiryContact">Preferred Contact Method</label>
+                            <select id="enquiryContact" name="contactMethod">
+                                <option value="email">Email</option>
+                                <option value="phone">Phone Call</option>
+                                <option value="whatsapp">WhatsApp</option>
+                                <option value="meeting">In-person Meeting</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-submit" id="enquirySubmit">
+                        <span class="submit-text">Submit Enquiry</span>
+                        <div class="loading-spinner" style="display: none;"></div>
+                    </button>
+                    
+                    <div id="enquirySuccess" class="form-success" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Enquiry Submitted Successfully!</h3>
+                        <p>Thank you for your interest in Wrench & Spark products. We'll review your enquiry and get back to you with detailed information within 1 business day.</p>
+                        <div class="success-details">
+                            <p><strong>Reference Number:</strong> <span id="referenceNumber"></span></p>
+                            <p><strong>Expected Response:</strong> Within 24 hours</p>
+                            <p><strong>Next Steps:</strong> Our specialist will contact you to discuss your requirements</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Services Section -->
+    <section class="section-padding" style="background-color: #f1f5f9;">
+        <div class="container">
+            <h2 class="section-title">Business & Partnership Opportunities</h2>
+            <div class="business-services">
+                <div class="service-card">
+                    <i class="fas fa-industry service-icon"></i>
+                    <h3>Bulk Orders</h3>
+                    <p>Special pricing for workshops, training centers, and businesses ordering in quantity</p>
+                    <ul>
+                        <li>Volume discounts</li>
+                        <li>Custom packaging</li>
+                        <li>Direct shipping</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-handshake service-icon"></i>
+                    <h3>Partnerships</h3>
+                    <p>Become a Wrench & Spark dealer or authorized service center</p>
+                    <ul>
+                        <li>Dealer pricing</li>
+                        <li>Marketing support</li>
+                        <li>Technical training</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-toolbox service-icon"></i>
+                    <h3>Custom Solutions</h3>
+                    <p>Need specialized tools or custom modifications?</p>
+                    <ul>
+                        <li>Custom tool design</li>
+                        <li>Branded equipment</li>
+                        <li>Special requirements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Tool Lane, Johannesburg</p>
+                    <p><i class="fas fa-phone"></i> (011) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@wrenchspark.co.za</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="enquiry.html">Enquiry</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for updates and special offers</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your Email Address">
+                        <a href="#" class="btn">Subscribe</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Wrench & Spark. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/forms.js"></script>
+    
+    <script>
+        // Additional functionality for enquiry page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show/hide product selection based on enquiry type
+            const enquiryType = document.getElementById('enquiryType');
+            const productSelection = document.getElementById('productSelection');
+            
+            enquiryType.addEventListener('change', function() {
+                if (this.value === 'product' || this.value === 'quote' || this.value === 'bulk') {
+                    productSelection.style.display = 'block';
+                } else {
+                    productSelection.style.display = 'none';
+                }
+            });
+            
+            // Show/hide custom budget field
+            const budgetSelect = document.getElementById('enquiryBudget');
+            const customBudget = document.getElementById('customBudget');
+            
+            budgetSelect.addEventListener('change', function() {
+                if (this.value === 'custom') {
+                    customBudget.style.display = 'block';
+                } else {
+                    customBudget.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
